@@ -41,7 +41,7 @@ parameters:
   adminUsername:
     value: azureuser
   adminPassword:
-    value: 
+    value: @adhoo@172209
   diagnosticsStorageAccountName:
     value: adhoorg001diag
   diagnosticsStorageAccountId:
