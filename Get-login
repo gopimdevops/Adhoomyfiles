@@ -1,2 +1,2 @@
-$Credential = Get-Credential
+$Credential = Aathvik@2017
 Connect-AzAccount -Credential $Credential
