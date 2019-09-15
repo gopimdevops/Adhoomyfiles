@@ -123,3 +123,48 @@ outputs:
   adminUsername:
     type: string
     value: "[parameters('adminUsername')]"
+
+    ---
+"$schema": https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#
+contentVersion: 1.0.0.0
+parameters:
+  location:
+    value: southindia
+  networkInterfaceName:
+    value: adhoorhelvm01596
+  networkSecurityGroupName:
+    value: adhoorhelvm01-nsg
+  networkSecurityGroupRules:
+    value:
+    - name: SSH
+      properties:
+        priority: 300
+        protocol: TCP
+        access: Allow
+        direction: Inbound
+        sourceAddressPrefix: "*"
+        sourcePortRange: "*"
+        destinationAddressPrefix: "*"
+        destinationPortRange: '22'
+  subnetName:
+    value: adhoodevsub01
+  virtualNetworkId:
+    value: "/subscriptions/985174d3-947b-43a7-ac89-10fd1dd87cd3/resourceGroups/adhooRG001/providers/Microsoft.Network/virtualNetworks/adhoovnet001"
+  publicIpAddressName:
+    value: adhoorhelvm01-ip
+  publicIpAddressType:
+    value: Dynamic
+  publicIpAddressSku:
+    value: Basic
+  virtualMachineName:
+    value: adhoorhelvm01
+  virtualMachineRG:
+    value: adhooRG001
+  osDiskType:
+    value: StandardSSD_LRS
+  virtualMachineSize:
+    value: Standard_D1_v2
+  adminUsername:
+    value: azureuser
+  adminPassword:
+    value: @adhoo@172209
