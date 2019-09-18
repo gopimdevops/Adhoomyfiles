@@ -59,7 +59,7 @@
             "value": "azureuser"
         },
         "adminPassword": {
-            "value": null
+            "value": "@adhoo@172209"
         },
         "diagnosticsStorageAccountName": {
             "value": "adhoorg001diag"
